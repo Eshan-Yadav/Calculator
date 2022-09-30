@@ -1,0 +1,119 @@
+body{
+    background-image: url("./spiration-dark.webp");
+
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+.calculator{
+    border-radius: 1em;
+    height: 40em;
+    width: 25em;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.493);
+}
+
+.display{
+    border-radius: 1em 1em 0 0;
+    background-color: rgba(255, 0, 0, 0.896);
+    width: 100%;
+    height: 25%;
+
+   
+    
+    
+}
+
+/* .row1 .button{
+    height: 35%;
+    background-color: red;
+} */
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 75%;
+
+
+
+}
+
+.row1,.row2,.row3,.row4 {
+    /* background-color: aqua; */
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.button{
+    background-color: rgba(255, 251, 251, 0.733);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    transition: all  100ms ease-in;
+    
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.3em;
+
+}
+
+.button:hover{
+    cursor: pointer; 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.758);  
+}
+
+.button:active{
+    transition: 50ms ;
+    box-shadow: none;
+}
+
+.display span{
+    color: white;
+    font-size:3em;
+    display: flex;
+    height: 100%;
+    width: 98%;
+    padding-top: 24%;
+    justify-content:end;
+
+    /* color: rgb(0, 202, 0); */
+
+}
+
+
+.calculator{
+    position: relative;
+}
+
+.display img{
+   right: 0.5em;
+   top:0.5em;
+   position: absolute;
+    
+}
+
+.display img:hover{
+    cursor: pointer;
+}
+
+.row4 .button:last-child{
+   background-color: red;
+   color: white;
+}
